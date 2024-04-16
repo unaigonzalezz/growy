@@ -1,0 +1,11 @@
+.textWhite{
+    color: white !important;
+}
+
+*{
+    color: white !important;
+}
+
+.opBg{
+    opacity: 0.5;
+}
