@@ -45,7 +45,7 @@ return (
                                 {calcularVeces()}
                             </dd>
 
-                            <dd className="flex items-center space-x-1 text-sm font-medium text-blue-500">
+                            <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
                                 <span>Nos mordemos las uñas de media 14 veces por día.</span>
                             </dd>
                         </dl>
@@ -60,7 +60,7 @@ return (
                                 {calcularCrecimiento()} MM
                             </dd>
 
-                            <dd className="flex items-center space-x-1 text-sm font-medium text-blue-500">
+                            <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
                                 <span>Las uñas crecen de media 0.1 MM por día.</span>
                             </dd>
                         </dl>
@@ -75,7 +75,7 @@ return (
                                 {calcularVeces()}
                             </dd>
 
-                            <dd className="flex items-center space-x-1 text-sm font-medium text-blue-500">
+                            <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
                                 <span>¡A por todas!</span>
                             </dd>
                         </dl>
@@ -90,7 +90,7 @@ return (
                                 {calcularVeces()}
                             </dd>
 
-                            <dd className="flex items-center space-x-1 text-sm font-medium text-blue-500">
+                            <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
                                 <span>¡A por todas!</span>
                             </dd>
                         </dl>

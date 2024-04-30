@@ -1,12 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
-.counterContainer {
-  height: 300px;
-}
-
-.counterText {
-  font-size: 120px;
-  text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.animate__animated.animate__pulse {
+  --animate-duration: 4s;
 }
 
 .textAnim {
