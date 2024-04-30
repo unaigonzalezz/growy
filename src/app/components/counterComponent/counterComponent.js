@@ -74,11 +74,11 @@ export default function CounterComponent() {
 
   return (
     <>
-      <div className="barraPrCont">
+      <div className="barraPrCont dark:bg-gray-800">
         <div className="barraPr animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto]" style={{ width: getProgressBarWidth() }}></div>
       </div>
       <div class="text-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-        <p className="textAnim">¡Enhorabuena! Llevas sin morderte las uñas</p>
+        <p className="textAnim text-white">¡Enhorabuena! Llevas sin morderte las uñas</p>
         <div className="flex items-center justify-center counterContainer ">
           <p className="animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto] bg-clip-text text-8xl font-bold text-transparent mt-16">
             {getTime()}

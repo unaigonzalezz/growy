@@ -6,11 +6,8 @@ import "./heroComponent.css";
 export default function HeroComponent() {
   return (
     <div>
-      <nav
-        className="py-5 border-b-default border-solid border-gray-200 z-10 w-full bg-inherit lg:fixed"
-        id="topnav"
-      >
-        <div className="mx-auto max-w-7xl  lg:px-8">
+      <nav className="py-5 border-b-default border-solid border-gray-200 z-10 w-full bg-inherit lg:fixed" id="topnav">
+      <div className="mx-auto max-w-7xl  lg:px-8 ">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:hidden px-4">
               <a href="https://pagedone.io/" className="flex items-center">
@@ -456,25 +453,25 @@ export default function HeroComponent() {
                 href="https://pagedone.io/"
                 className="hidden lg:flex items-center"
               >
-                <h1 className="text-black text-3xl">Growy</h1>
+                <img class='h-9' src='/assets/logo.png' />
               </a>
               <div className="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:flex-1 lg:justify-end">
-                <button className="bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm lg:ml-5 hover:bg-indigo-700">
+                <a href="/dashboard"><button className="bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm lg:ml-5 hover:bg-indigo-700">
                   Dashboard
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <section className="pt-8 lg:pt-32 bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-black bg-cover">
+      <section className="pt-8  lg:pt-32 bg-[url('https://i.ibb.co/8js1pcr/1691055810.png')] bg-center dark:bg-gray-900 bg-cover ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
           <div className="border border-indigo-600 p-1 w-60 mx-auto rounded-full flex items-center justify-between mb-4">
-            <span className="font-inter text-xs font-medium text-gray-900 ml-3">
+            <span className="font-inter text-xs font-medium text-gray-900 ml-3" >
               ¡Aprende sobre la onicofagia!
             </span>
             <a
-              href="javascript:;"
+              href="/about"
               className="w-8 h-8 rounded-full flex justify-center items-center bg-indigo-600"
             >
               <svg
@@ -496,15 +493,14 @@ export default function HeroComponent() {
           </div>
           <h1 className="max-w-2xl mx-auto text-balance font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]">
             <br />
-            Growy - Crece a la par que tus
-            <span className="text-indigo-600"> uñas</span>
+            <img src='/assets/logo.png' />
           </h1>
           <p className="max-w-sm mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9">
             La onicofagia es como tener una fiesta de picoteo, pero con tus
             propias uñas como aperitivos.
           </p>
           <a
-            href="javascript:;"
+            href="/dashboard"
             className="w-full md:w-auto mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-center text-white rounded-full bg-indigo-600 shadow-xs hover:bg-indigo-700 transition-all duration-500"
           >
             ¡Quiero crecer!
@@ -526,13 +522,15 @@ export default function HeroComponent() {
             </svg>
           </a>
           <div className="flex justify-center">
-            <img
-              src="https://pagedone.io/asset/uploads/1691054543.png"
+            <img className="rounded-lg"
+              src="/assets/pc.png"
               alt="Dashboard image"
             />
           </div>
         </div>
+        <br/>
+        <br/>
       </section>
     </div>
-  );
+  )
 }

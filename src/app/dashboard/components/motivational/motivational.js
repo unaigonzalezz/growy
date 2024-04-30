@@ -12,9 +12,9 @@ export default function Motivational() {
     const currentPhrase = inspirationalPhrases[phraseIndex];
 
     return (
-      <section className="relative isolate overflow-hidden px-6 lg:px-8">
+      <section className="mb-11 relative isolate overflow-hidden px-6 lg:px-8 ">
         <div className="flex justify-between gap-4">
-          <div className="w-1/2 p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+          <div className="w-1/2 p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
               <dl className="space-y-2">
               <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
                     <p>Frase del día: </p>
@@ -27,7 +27,7 @@ export default function Motivational() {
                   </dd>
               </dl>
           </div>
-          <div className="w-1/2 p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+          <div className="w-1/2 p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
               <dl className="space-y-2">
 
                   <dd className="text-xl font-light md:text-3xl dark:text-white">

@@ -35,7 +35,7 @@ return (
         {localStorage.getItem('startTime') && (
             <div className="animate__animated animate__fadeIn flex justify-center items-center">
                 <section className="grid gap-6 md:grid-cols-4 p-4 md:p-8 mx-auto w-full ">
-                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
                         <dl className="space-y-2">
                             <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
                             <FontAwesomeIcon icon={faHashtag} /> Nº de veces que has evitado morderte las uñas:
@@ -50,7 +50,7 @@ return (
                             </dd>
                         </dl>
                     </div>
-                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
                         <dl className="space-y-2">
                             <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
                             <FontAwesomeIcon icon={faRuler} /> Tus uñas han crecido:
@@ -65,7 +65,7 @@ return (
                             </dd>
                         </dl>
                     </div>
-                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
                         <dl className="space-y-2">
                             <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
                                 Nº de veces que no te has mordido las uñas
@@ -80,7 +80,7 @@ return (
                             </dd>
                         </dl>
                     </div>
-                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-900">
+                    <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
                         <dl className="space-y-2">
                             <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
                                 Nº de veces que no te has mordido las uñas

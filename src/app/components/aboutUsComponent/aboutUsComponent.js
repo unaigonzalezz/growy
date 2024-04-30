@@ -1,21 +1,35 @@
 import React from 'react'
+import './aboutUsPrincipal.css'
 
 export default function aboutUsComponent() {
   return (
-    <div>
-    <section className="bg-white dark:bg-gray-900">
-    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Powering innovation at <span className="font-extrabold">200,000+</span> companies worldwide</h2>
-            <p className="mb-4 font-light">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
-            <p className="mb-4 font-medium">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
-            <a href="#" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-                Learn more
-                <svg className="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-            </a>
+<>
+<div class="custom-shape-divider-bottom-1714476826">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className=''>
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<section class="pt-8 lg:pt-32 bg-center dark:bg-gray-900 bg-cover">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">¿Quien soy?</h2>
+            <p class="mb-4">Soy Unai González y llevo mordiéndome las uñas desde que tengo conciencia, mis padres dicen que empecé a los 3 años, aunque no recuerdo nada de tan temprana edad, si tengo algún recuerdo suelto mordiéndome las uñas siendo un poco más mayor, seguramente mientras escriba este trabajo, alguna vez me muerda las uñas.</p>
+            <p class="mb-4">Mi relación con la Onicofagia es más tóxica de lo que querría, muerdo mis uñas más de 20 veces al día de forma inconsciente, astillo las uñas levantando la parte superior, me muerdo los padrastros superiores y laterales, llegándome a abrir heridas y dejar la piel en carne viva. Tengo las cutículas muy debilitadas, la uña más frágil que un papel y la piel de la uña destrozada.</p>
+            <p>Pero esto se ha acabado, he creado Growy para acabar con esta mala práctica.</p>
+            <br/>
+            <h2 className='h2'>Bienvenido a la revolución, bienvenido a...</h2>
+            <img
+                    className="h-8 w-auto mt-4"
+                    src="/assets/logo.png"
+                    alt="Your Company"
+                  />
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://unaigonzalez.es/static/media/me.735ddc8c35966ca68eeb.jpg" alt="office content 1" />
+            <img class="w-full rounded-lg" src="https://unaigonzalez.es/static/media/me.735ddc8c35966ca68eeb.jpg" alt="office content 1" />
         </div>
     </div>
-  </section>
-  </div>
+</section>
+</>
   )
 }
