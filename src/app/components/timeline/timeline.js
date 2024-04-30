@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Timeline() {
   return (
-    <div className='items-center mx-auto max-w-screen-xl  lg:grid-cols-2 lg:py-16 lg:px-6'>
-    <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestro método</h2>
-    <ol class="items-center sm:flex">
+    <div className='items-center mx-auto max-w-screen-xl lg:grid-cols-2 lg:py-16 lg:px-6 '>
+    <h2 class="m-5 mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestro método</h2>
+    <ol class="items-center sm:flex m-5">
     <li class="relative mb-6 sm:mb-0">
         <div class="flex items-center">
             <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">

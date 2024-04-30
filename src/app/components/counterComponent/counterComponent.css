@@ -31,3 +31,22 @@
   background-color: #334c81;
   transition: width 0.1s ease-in;
 }
+
+.forestBg{
+  width: 100%;
+  height: 30vh;
+  margin-top: -28vh;
+  z-index: -200 !important;
+  background-image: url('https://i.ibb.co/Dbwx69F/background.png') !important;
+  background-position: center;
+  background-size: 650px;
+  background-repeat: repeat-x;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.textCounter{
+  z-index: 100 !important;
+  opacity: 1;
+
+}
