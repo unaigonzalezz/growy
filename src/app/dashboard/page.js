@@ -16,7 +16,7 @@ export default function Dashboard() {
     <>
       <div className="dark:bg-gray-900 text-white w-full h-full">
         <NavBar></NavBar>
-        <CounterComponent></CounterComponent>
+        <CounterComponent text='Unasito'></CounterComponent>
         <StatsComponent></StatsComponent>
         <Motivational></Motivational>
         <Footer></Footer>
