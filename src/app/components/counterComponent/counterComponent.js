@@ -11,8 +11,9 @@ import "./counterComponent.css";
 import "animate.css";
 
 export default function CounterComponent() {
+
   const [startTime, setStartTime] = useState(
-    localStorage.getItem("startTime") || null
+    typeof window !== "undefined" ? localStorage.getItem("startTime") || 0 : 0
   );
   const [currentTime, setCurrentTime] = useState(new Date());
   const [counterStarted, setCounterStarted] = useState(false);
@@ -77,7 +78,7 @@ export default function CounterComponent() {
       <div className="barraPrCont dark:bg-gray-800">
         <div className="barraPr animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto]" style={{ width: getProgressBarWidth() }}></div>
       </div>
-      <div class="text-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+      <div className="text-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
         <p className="textAnim text-white">¡Enhorabuena! Llevas sin morderte las uñas</p>
         <p className="textCounter text-center animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto] bg-black bg-clip-text text-8xl font-bold text-white mt-16">
             {getTime()}

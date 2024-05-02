@@ -1,11 +1,10 @@
 import('next').NextConfig
 
 const nextConfig = {
-};
-
-const supportedLngs = ['es', 'en']
-export const ni18nConfig = {
-    supportedLngs,
-}
-
+    reactStrictMode: true,
+    output: "export",
+    images: {
+      unoptimized: true,
+    },
+  };
 export default nextConfig;

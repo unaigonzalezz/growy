@@ -11,7 +11,7 @@ export default function HeroComponent() {
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:hidden px-4">
               <a href="https://pagedone.io/" className="flex items-center">
-                <img class='h-9' src='/assets/logo.png' />
+                <img className='h-9' src='/assets/logo.png' />
               </a>
               <button
                 data-collapse-toggle="navbar"
@@ -62,7 +62,7 @@ export default function HeroComponent() {
                 href="https://pagedone.io/"
                 className="hidden lg:flex items-center"
               >
-                <img class='h-9' src='/assets/logo.png' />
+                <img className='h-9' src='/assets/logo.png' />
               </a>
               <div className="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:flex-1 lg:justify-end">
                 <a href="/dashboard"><button className="bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 py-3 px-6 text-sm lg:ml-5 hover:bg-indigo-700">
@@ -94,8 +94,8 @@ export default function HeroComponent() {
                   d="M2.83398 8.00019L12.9081 8.00019M9.75991 11.778L13.0925 8.44541C13.3023 8.23553 13.4073 8.13059 13.4073 8.00019C13.4073 7.86979 13.3023 7.76485 13.0925 7.55497L9.75991 4.22241"
                   stroke="white"
                   stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </a>
@@ -125,8 +125,8 @@ export default function HeroComponent() {
                 d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
                 stroke="white"
                 stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>

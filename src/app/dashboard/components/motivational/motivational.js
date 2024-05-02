@@ -4,7 +4,13 @@ import React from 'react'
 import inspirationalPhrases from './phrases'
 
 export default function Motivational() {
-    const startTime = localStorage.getItem('startTime');
+
+    const startTime = 0;
+    
+    if (typeof window !== "undefined") {
+        const startTime = localStorage.getItem("startTime") || 0;
+    }
+
     const currentDate = new Date();
     const millisecondsPerDay = 24 * 60 * 60 * 1000;
     const daysElapsed = Math.floor((currentDate - new Date(startTime)) / millisecondsPerDay);
