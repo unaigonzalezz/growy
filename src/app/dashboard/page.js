@@ -1,4 +1,3 @@
-"use client";
 
 import CounterComponent from "../components/counterComponent/counterComponent";
 import React from "react";
@@ -6,8 +5,11 @@ import NavBar from "../components/navBarComponent/navBarComponent";
 import StatsComponent from "./components/stats/statsComponent";
 import Motivational from "./components/motivational/motivational";
 import Footer from "../components/footer/footer";
-
 import "./dashboard.css";
+
+export const metadata  = {
+  title: 'Growy',
+}
 
 export default function Dashboard() {
   return (
