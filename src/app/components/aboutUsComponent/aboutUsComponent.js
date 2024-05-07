@@ -24,9 +24,8 @@ export default function aboutUsComponent() {
                     alt="Your Company"
                   />
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8">
-            <img className="w-full rounded-lg" src="https://unaigonzalez.es/static/media/me.735ddc8c35966ca68eeb.jpg" alt="office content 1" />
-            <img className="w-full rounded-lg" src="https://unaigonzalez.es/static/media/me.735ddc8c35966ca68eeb.jpg" alt="office content 1" />
+        <div className="">
+            <img className="w-90 rounded-lg" src="https://i.ibb.co/3Bq0vjJ/me-735ddc8c35966ca68eeb-1-1.jpg" alt="office content 1" />
         </div>
     </div>
 </section>

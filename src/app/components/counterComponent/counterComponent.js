@@ -97,8 +97,7 @@ export default function CounterComponent() {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-5"
             onClick={handleStart}
           >
-            <FontAwesomeIcon icon={faCirclePlay} /> Empezar
-          </button>
+            <FontAwesomeIcon icon={faCirclePlay} /> Empezar</button>
         )}
         {(startTime) && (
           <>

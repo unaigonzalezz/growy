@@ -29,7 +29,7 @@ export default function Dashboard() {
         {showModules && <StatsComponent />}
         {showModules && <Motivational />}
         <Faq/>
-        {showModules && <Footer />}
+        <Footer />
       </div>
     </>
   );

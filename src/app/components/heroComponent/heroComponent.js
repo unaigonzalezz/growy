@@ -51,10 +51,18 @@ export default function HeroComponent() {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="/about"
                     className="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900"
                   >
                     Sobre nosotros
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/dashboard"
+                    className="text-gray-500 text-sm font-medium hover:text-prime-blue-700 transition-all duration-500 mb-2 block lg:mr-6 lg:text-base md:mb-0 md:mr-3 hover:text-gray-900"
+                  >
+                    Dashboard
                   </a>
                 </li>
               </ul>

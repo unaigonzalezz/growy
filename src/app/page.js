@@ -4,10 +4,6 @@ import Timeline from "./components/timeline/timeline";
 import Footer from "./components/footer/footer";
 import NextTopLoader from "nextjs-toploader";
 
-export const metadata = {
-  title: "Growy",
-};
-
 export default function Home() {
 
 
