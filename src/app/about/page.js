@@ -38,7 +38,7 @@ Los motivos que producen la Onicofagia pueden ser varios: Estrés, aburrimiento,
             
         </div>
         <div className='text-center'>
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5'>¡Quiero dejar de morderme las uñas!</button>
+        <a href='/dashboard'><button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5'>¡Quiero dejar de morderme las uñas!</button></a>
         </div>
         </div>
     </>

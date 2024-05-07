@@ -1,16 +1,17 @@
 "use client";
 
-import React from "react";
+import { React, useState }from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHashtag, faRuler } from "@fortawesome/free-solid-svg-icons";
 
 export default function StatsComponent() {
     
   const calcularVeces = () => {
-    const startTime = 0;
-    if (typeof window !== "undefined") {
-        const startTime = localStorage.getItem("startTime") || 0;
-    }
+
+    const [startTime, setStartTime] = useState(
+      typeof window !== "undefined" ? localStorage.getItem("startTime") || 0 : 0
+    );
+
     const startDate = new Date(startTime);
     const currentDate = new Date();
     const timeDiff = Math.abs(currentDate - startDate);
@@ -23,10 +24,9 @@ export default function StatsComponent() {
 
   const calcularCrecimiento = () => {
 
-    const startTime = 0;
-    if (typeof window !== "undefined") {
-        const startTime = localStorage.getItem("startTime") || 0;
-    }
+    const [startTime, setStartTime] = useState(
+      typeof window !== "undefined" ? localStorage.getItem("startTime") || 0 : 0
+    );
     const startDate = new Date(startTime);
     const currentDate = new Date();
     const timeDiff = Math.abs(currentDate - startDate);

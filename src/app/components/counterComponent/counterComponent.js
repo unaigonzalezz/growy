@@ -75,32 +75,43 @@ export default function CounterComponent() {
 
   return (
     <>
-      <div className="barraPrCont dark:bg-gray-800">
-        <div className="barraPr animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto]" style={{ width: getProgressBarWidth() }}></div>
-      </div>
+      {(!startTime && !localStorage.getItem("startTime")) && (
+        <div className="barraPrCont dark:bg-gray-800">
+          <div className="barraPr animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto]" style={{ width: getProgressBarWidth() }}></div>
+        </div>
+      )}
       <div className="text-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-        <p className="textAnim text-white">¡Enhorabuena! Llevas sin morderte las uñas</p>
+      <p className="textAnim text-white -mt-6"></p>
+        {(startTime || localStorage.getItem("startTime")) && (
+          <p className="textAnim text-white">¡Enhorabuena! Llevas sin morderte las uñas</p>
+        )}
         <p className="textCounter text-center animate-linear mb-20 bg-gradient-to-r from-dark via-pink-500 to-dark bg-[length:200%_auto] bg-black bg-clip-text text-8xl font-bold text-white mt-16">
-            {getTime()}
-          </p>
+          {getTime()}
+        </p>
         <div className="flex items-center justify-center counterContainer forestBg">
         </div>
-        
+        <p className="text-white text-center">¡Recuerda que debes reiniciar el contador cada vez que te muerdas las uñas!</p>
         <div className="flex items-center justify-center">
-          {counterStarted ? null : (
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-5"
-              onClick={handleStart}
-            >
-              <FontAwesomeIcon icon={faCirclePlay} /> Empezar
-            </button>
-          )}
+        {(!startTime && !localStorage.getItem("startTime")) && (
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-5"
+            onClick={handleStart}
+          >
+            <FontAwesomeIcon icon={faCirclePlay} /> Empezar
+          </button>
+        )}
+        {(startTime || localStorage.getItem("startTime")) && (
+          <>
           <button
             className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-5"
             onClick={handleReset}
           >
             <FontAwesomeIcon icon={faArrowRotateRight} /> Resetear
           </button>
+          <br/>
+          </>
+        )}
+
         </div>
         
       </div>
