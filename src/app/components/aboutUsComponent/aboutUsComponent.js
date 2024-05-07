@@ -25,6 +25,7 @@ export default function aboutUsComponent() {
                   />
         </div>
         <div className="">
+            <br/>
             <img className="w-90 rounded-lg" src="https://i.ibb.co/3Bq0vjJ/me-735ddc8c35966ca68eeb-1-1.jpg" alt="office content 1" />
         </div>
     </div>

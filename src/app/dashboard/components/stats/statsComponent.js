@@ -11,7 +11,7 @@ export default function StatsComponent() {
   );
 
   const [elapsedTime, setElapsedTime] = useState(
-    typeof window !== "undefined" ? localStorage.getItem("elapsedTime") || 0 : 0
+    typeof window !== "undefined" ? localStorage.getItem("totalElapsedTime") || 0 : 0
   );
     
   const calcularVeces = () => {
@@ -101,7 +101,7 @@ export default function StatsComponent() {
               </dt>
 
               <dd className="text-5xl font-light md:text-6xl dark:text-white">
-                {elapsedTime} min
+                {elapsedTime} h
               </dd>
 
               <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">

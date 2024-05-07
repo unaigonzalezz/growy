@@ -38,13 +38,14 @@ export default function CounterComponent() {
     setCounterStarted(true);
     window.location.reload();
   };
+
   const handleReset = () => {
     const elapsedTime = Math.floor((currentTime - new Date(startTime)) / 1000);
     const timesRestarted = localStorage.getItem("timesRestarted") || 0;
     localStorage.setItem("timesRestarted", parseInt(timesRestarted) + 1);
     const totalElapsedTime = localStorage.getItem("totalElapsedTime") || 0;
-    localStorage.setItem("totalElapsedTime", parseInt(totalElapsedTime) + elapsedTime);
-    const minutesElapsed = Math.floor(elapsedTime / 60);
+    const hoursElapsed = Math.floor(elapsedTime / 3600);
+    localStorage.setItem("totalElapsedTime", parseInt(totalElapsedTime) + hoursElapsed);
     setStartTime(null);
     localStorage.removeItem("startTime");
     setCounterStarted(false);
