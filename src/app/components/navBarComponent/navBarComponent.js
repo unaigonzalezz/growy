@@ -9,8 +9,6 @@ const navigation = [
   { name: 'Inicio', href: '/', current: false },
   { name: 'Dashboard', href: '/dashboard', current: true },
   { name: '¿Que es?', href: '/about', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
 ]
 
 function classNames(...classes) {

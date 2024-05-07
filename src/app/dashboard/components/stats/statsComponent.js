@@ -5,6 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHashtag, faRuler } from "@fortawesome/free-solid-svg-icons";
 
 export default function StatsComponent() {
+
+  const [timesRestarted, setTimesRestarted] = useState(
+    typeof window !== "undefined" ? localStorage.getItem("timesRestarted") || 0 : 0
+  );
+
+  const [elapsedTime, setElapsedTime] = useState(
+    typeof window !== "undefined" ? localStorage.getItem("elapsedTime") || 0 : 0
+  );
     
   const calcularVeces = () => {
 
@@ -74,11 +82,11 @@ export default function StatsComponent() {
           <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
             <dl className="space-y-2">
               <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                Nº de veces que no te has mordido las uñas
+                Has reiniciado el contador
               </dt>
 
               <dd className="text-5xl font-light md:text-6xl dark:text-white">
-                {calcularVeces()}
+                {timesRestarted} veces
               </dd>
 
               <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
@@ -89,15 +97,15 @@ export default function StatsComponent() {
           <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
             <dl className="space-y-2">
               <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                Nº de veces que no te has mordido las uñas
+                Entre todos los intentos llevas
               </dt>
 
               <dd className="text-5xl font-light md:text-6xl dark:text-white">
-                {calcularVeces()}
+                {elapsedTime} min
               </dd>
 
               <dd className="flex items-center space-x-1 text-sm font-medium text-pink-500">
-                <span>¡A por todas!</span>
+                <span>¡Ya casi lo tienes!</span>
               </dd>
             </dl>
           </div>
