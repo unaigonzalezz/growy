@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://i.ibb.co/hx0B8QF/logo-2.png" alt="StreamDeckify" ></a>
+<img src="https://i.ibb.co/hx0B8QF/logo-2.png" >
 </h1>
 <h3 align="center">Bye bye Onicophagy!</h3>
 
