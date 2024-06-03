@@ -30,7 +30,7 @@ export default function Motivational() {
                       {currentPhrase}
                   </dd>
                   <dd className="flex float-right items-center space-x-1 text-sm font-medium text-blue-500">
-                      <span className='-mt-6 mrgMv'>Frase {daysElapsed} de 31</span>
+                      <span className='mt-6 mrgMv'>Frase {daysElapsed} de 31</span>
                   </dd>
               </dl>
           </div>
@@ -43,7 +43,7 @@ export default function Motivational() {
                       {currentConsejo}
                   </dd>
                   <dd className="flex float-right items-center space-x-1 text-sm font-medium text-blue-500">
-                      <span className='-mt-6 mrgMv'>Consejo {daysElapsed} de 31</span>
+                      <span className='mt-6 mrgMv'>Consejo {daysElapsed} de 31</span>
                   </dd>
               </dl>
           </div>

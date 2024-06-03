@@ -10,7 +10,7 @@ export default function HeroComponent() {
       <div className="mx-auto max-w-7xl  lg:px-8 ">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="flex justify-between lg:hidden px-4">
-              <a href="https://pagedone.io/" className="flex items-center">
+              <a href="/" className="flex items-center">
                 <img className='h-9' src='/assets/logo.png' />
               </a>
             </div>
@@ -45,7 +45,7 @@ export default function HeroComponent() {
                 </li>
               </ul>
               <a
-                href="https://pagedone.io/"
+                href="/"
                 className="hidden lg:flex items-center"
               >
                 <img className='h-9' src='/assets/logo.png' />

@@ -72,7 +72,7 @@ export default function CounterComponent() {
       const days = Math.floor(difference / (3600 * 24));
       const minutes = Math.floor((difference % 3600) / 60);
       const seconds = difference % 60;
-      return `${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+      return `${days.toString().padStart(2, "0")}D:${hours.toString().padStart(2, "0")}H:${minutes.toString().padStart(2, "0")}M:${seconds.toString().padStart(2, "0")}S`;
     }
     return "¡Empieza ya!";
   };

@@ -2,7 +2,7 @@
 
 import { React, useState }from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHashtag, faRuler } from "@fortawesome/free-solid-svg-icons";
+import { faHashtag, faListOl, faRuler, faRepeat } from "@fortawesome/free-solid-svg-icons";
 
 export default function StatsComponent() {
 
@@ -82,7 +82,7 @@ export default function StatsComponent() {
           <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
             <dl className="space-y-2">
               <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                Has reiniciado el contador
+              <FontAwesomeIcon icon={faRepeat} /> Has reiniciado el contador
               </dt>
 
               <dd className="text-5xl font-light md:text-6xl dark:text-white">
@@ -97,7 +97,7 @@ export default function StatsComponent() {
           <div className="p-6 bg-white shadow rounded-2xl dark:bg-gray-800">
             <dl className="space-y-2">
               <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                Entre todos los intentos llevas
+              <FontAwesomeIcon icon={faListOl} /> Entre todos los intentos llevas
               </dt>
 
               <dd className="text-5xl font-light md:text-6xl dark:text-white">
